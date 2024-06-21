@@ -1,0 +1,49 @@
+# site info
+site_name: 'wonsama : project'
+site_description: "wonsama's tech logs"
+site_author: 'wonsama'
+site_url: http://localhost:8000
+
+# document navigation
+nav:
+  - home:
+      - index.md
+      - About: about.md
+      - Hello: hello.md
+  - Section1:
+      - home: section1/index.md
+      - p1: section1/p1.md
+      - p2: section1/p2.md
+  - Section2:
+      - home: section2/index.md
+      - p1: section2/p1.md
+      - p2: section2/p2.md
+      - Section21:
+          - home: section2/section21/index.md
+          - p1: section2/section21/p1.md
+          - p2: section2/section21/p2.md
+
+# 테마
+theme:
+  features:
+    - toc.follow
+    # - toc.integrate
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
+    - navigation.indexes
+  name: mkdocs
+  font:
+    # https://fonts.google.com/ 폰트명 설정
+    text: Noto Sans Korean
+  logo: assets/images/logo.jpg
+  favicon: assets/images/logo.jpg
+  # 목차 등과 같은 정보가 언어에 맞춰 표시됨
+  language: ko
+
+extra:
+  homepage: https://wonsama.dev
