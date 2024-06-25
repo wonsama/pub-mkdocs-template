@@ -1,0 +1,32 @@
+[data-md-color-scheme='youtube'] {
+  --md-primary-fg-color: #ee0f0f;
+  --md-primary-fg-color--light: #ecb7b7;
+  --md-primary-fg-color--dark: #90030c;
+}
+
+[data-md-color-scheme='slate'] {
+  --md-hue: 210;
+}
+
+/*color scheme : needs config - attr_list*/
+.youtube {
+  color: #ee0f0f;
+}
+
+/* animation */
+@keyframes heart {
+  0%,
+  40%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  20%,
+  60% {
+    transform: scale(1.15);
+  }
+}
+.heart {
+  animation: heart 1000ms infinite;
+  color: #ee0f0f;
+}

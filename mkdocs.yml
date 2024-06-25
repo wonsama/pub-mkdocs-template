@@ -1,42 +1,50 @@
 # site info
-site_name: 'wonsama : project'
-site_description: "wonsama's tech logs"
-site_author: 'wonsama'
+site_name: 'Title here'
+site_description: 'Site Description'
+site_author: 'Author'
 site_url: http://localhost:8000
 
 # document navigation
 nav:
-  - home:
-      - index.md
-      - About: about.md
-      - Hello: hello.md
-  - Section1:
-      - home: section1/index.md
-      - p1: section1/p1.md
-      - p2: section1/p2.md
-  - Section2:
-      - home: section2/index.md
-      - p1: section2/p1.md
-      - p2: section2/p2.md
-      - Section21:
-          - home: section2/section21/index.md
-          - p1: section2/section21/p1.md
-          - p2: section2/section21/p2.md
+  # - HOME:
+  #     - index.md
+  #     - About: about.md
+  #     - Hello: hello.md
+  - SEC1:
+      # - home: section1/index.md
+      - sec1-1: sec1/sec1-1.md
+      - sec1-2: sec1/sec1-2.md
+  - Markdown Plugins:
+      # - home: section2/section21/index.md
+      - using-emojis: sec2/using-emojis.md
+      - using-icons: sec2/using-icons.md
+      - animated-icons: sec2/animated-icons.md
+      - code-highlight: sec2/code-highlight.md
+      - admotions: sec2/admotions.md
 
 # 테마
 theme:
   features:
+    - search.suggest
     - toc.follow
+    # 주석처리하면 우측에 컨텐츠 요약 정보가 보여진다
     # - toc.integrate
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tabs
+    - navigation.top
+    # 주석처리 시 1줄, 비처리 시 상단 TOP 메뉴 고정
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.prune
     - navigation.indexes
-  name: mkdocs
+    - navigation.path
+    # - header.autohide
+    - navigation.footer
+
+  # material 로 지정해야 search 등의 기능 사용가능
+  name: material
   font:
     # https://fonts.google.com/ 폰트명 설정
     text: Noto Sans Korean
@@ -44,6 +52,39 @@ theme:
   favicon: assets/images/logo.jpg
   # 목차 등과 같은 정보가 언어에 맞춰 표시됨
   language: ko
-
+  palette:
+    # Light mode
+    - scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: white
+      accent: white
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 extra:
-  homepage: https://wonsama.dev
+  homepage: /
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/@wonsama
+  generator: true
+extra_css:
+  - stylesheets/extra.css
+copyright: Copyright &copy; 2024 - wonsama
+markdown_extensions:
+  - admonition
+  # code highlight 설정
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  # emoji 설정 : extra.css 설정 참조
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
