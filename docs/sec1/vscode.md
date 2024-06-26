@@ -1,4 +1,4 @@
-# VSCODE 설정
+# VSCODE 플러그인
 
 ## Extensions 설치
 

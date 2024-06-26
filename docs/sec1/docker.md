@@ -1,12 +1,10 @@
-# 설치 및 실행
+# 설치 및 실행 (Docker)
 
-> 빠른 시작을 위해 `Docker` 를 사용하여 설치하는 방법을 설명 드립니다.. `pip` 또는 `git` 을 사용하여 설치하는 방법은 [mkdocs-material : getting-started](https://squidfunk.github.io/mkdocs-material/getting-started/){:target="\_blank"}를 참조 하시길 바랍니다.
-
-## 기본내용 작성하기
+## 기본내용 작성
 
 > 최소 구성으로 `mkdocs` 를 실행하기 위한 폴더 및 파일을 아래와 같이 생성합니다.
 
-### 폴더 및 파일 구조
+### 폴더 및 파일
 
 ```tree
 mkdocs
@@ -31,7 +29,7 @@ nav:
   - Home: index.md
 ```
 
-## Dockerfile 만들기
+## Dockerfile
 
 기본 `squidfunk/mkdocs-material` 이미지에 포함 된 플러그인
 
@@ -60,7 +58,7 @@ docker build -t squidfunk/mkdocs-material .
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
 ```
 
-## Docker Compose 로 실행
+## Docker Compose
 
 ### yaml 파일 작성
 
@@ -89,7 +87,3 @@ docker compose up -d
 ## 접속확인
 
 [http://localhost:8000](http://localhost:8000){:target="\_blank"} 에 접속하여 `Hello, MkDocs!` 가 표시되는지 확인합니다.
-
-## 참조링크
-
-- [mkdocs-material : getting-started](https://squidfunk.github.io/mkdocs-material/getting-started/){:target="\_blank"}
