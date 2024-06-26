@@ -1,20 +1,19 @@
 # site info
-site_name: 'Title here'
-site_description: 'Site Description'
-site_author: 'Author'
+site_name: 'MkDocs 템플릿'
+site_description: '사이트 설명'
+site_author: 'Wonsama'
 site_url: http://localhost:8000
 
 # document navigation
 nav:
   # - HOME:
   #     - index.md
-  #     - About: about.md
-  #     - Hello: hello.md
-  - SEC1:
+  - 시작하기:
       # - home: section1/index.md
-      - sec1-1: sec1/sec1-1.md
-      - sec1-2: sec1/sec1-2.md
-  - Markdown Plugins:
+      - 설치 및 실행: sec1/install.md
+      - VSCODE 플러그인: sec1/vscode.md
+      - 문제해결: sec1/problem-solving.md
+  - 마크다운 플러그인:
       # - home: section2/section21/index.md
       - using-emojis: sec2/using-emojis.md
       - using-icons: sec2/using-icons.md
