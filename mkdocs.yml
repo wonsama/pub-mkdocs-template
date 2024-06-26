@@ -72,7 +72,7 @@ extra:
   homepage: /
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/@wonsama
+      link: https://github.com/wonsama/pub-mkdocs-template
   generator: true
 extra_css:
   - stylesheets/extra.css
