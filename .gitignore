@@ -68,3 +68,6 @@ ENV/
 
 # MkDocs documentation
 site*/
+
+# added by wonsama
+.venv
