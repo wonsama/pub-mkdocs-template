@@ -18,6 +18,10 @@ nav:
   - 레퍼런스:
       # - home: section2/section21/index.md
       - Admonitions: sec2/admotions.md
+      - Annotations: sec2/annotations.md
+      - Buttons: sec2/buttons.md
+      - Code blocks: sec2/codeblocks.md
+      - Content tabs: sec2/contenttabs.md
       # - using-emojis: sec2/using-emojis.md
       # - using-icons: sec2/using-icons.md
       # - animated-icons: sec2/animated-icons.md
@@ -43,7 +47,10 @@ theme:
     - navigation.path
     # - header.autohide
     - navigation.footer
-
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
   # material 로 지정해야 search 등의 기능 사용가능
   name: material
   font:
@@ -53,6 +60,8 @@ theme:
   favicon: assets/images/logo.jpg
   # 목차 등과 같은 정보가 언어에 맞춰 표시됨
   language: ko
+  icon:
+    annotation: material/chevron-right-circle
   palette:
     # Light mode
     - scheme: default
@@ -78,15 +87,29 @@ extra_css:
   - stylesheets/extra.css
 copyright: Copyright &copy; 2024 - wonsama
 markdown_extensions:
-  - admonition
+  # 공통
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  # callout, admotions
+  - admonition
   # code highlight 설정
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
       pygments_lang_class: true
-  # emoji 설정 : extra.css 설정 참조
-  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  # emoji / extra.css  참조
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg # html
+
+
+  - md_in_html
+  # tab
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+      alternate_style: true

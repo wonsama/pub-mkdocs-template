@@ -1,3 +1,7 @@
+:root > * {
+  --md-code-hl-string-color: #0f38f1;
+}
+
 [data-md-color-scheme='youtube'] {
   --md-primary-fg-color: #ee0f0f;
   --md-primary-fg-color--light: #ecb7b7;
