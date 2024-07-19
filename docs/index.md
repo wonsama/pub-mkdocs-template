@@ -12,11 +12,22 @@
 
 ## 빠른 실행
 
-### pacakge 설치
-
 > 위 템플릿으로 프로젝트 생성 후, 아래 명령어를 실행합니다.
->
-> ( venv 등의 가상환경 구성 후 실행 추천 )
+
+### 가상환경 구성
+
+```bash
+# in linux or mac
+python -m venv venv
+source venv/bin/activate
+
+# in windows
+# powershell 을 사용하는 것을 권장
+python -m venv venv
+.venv\Scripts\activate
+```
+
+### pacakge 설치 및 실행
 
 ```bash
 pip install -r requirements.txt
@@ -25,7 +36,7 @@ mkdocs serve
 
 ### 실행
 
-[http://localhost:8000](http://localhost:8000) 에 접속하여 내용을 확인하실 수 있습니다.
+[http://localhost:9999](http://localhost:9999) 에 접속하여 내용을 확인하실 수 있습니다.
 
 ## 더 보기
 

@@ -1,8 +1,9 @@
 # site info
-site_name: 'MkDocs 템플릿'
-site_description: '사이트 설명'
-site_author: 'Wonsama'
-site_url: http://localhost:8000
+site_name: "MkDocs 템플릿"
+site_description: "사이트 설명"
+site_author: "Wonsama"
+site_url: http://localhost:9999
+dev_addr: localhost:9999
 
 # document navigation
 nav:
@@ -26,6 +27,8 @@ nav:
       # - using-icons: sec2/using-icons.md
       # - animated-icons: sec2/animated-icons.md
       # - code-highlight: sec2/code-highlight.md
+  - 기타:
+      - 이슈해결: sec3/trouble-shooting.md
 
 # 테마
 theme:
