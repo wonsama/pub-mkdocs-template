@@ -11,6 +11,18 @@ markdown_extensions:
       alternate_style: true
 ```
 
+> 앵커 가독성 증가 설정
+
+```yaml
+markdown_extensions:
+  - pymdownx.tabbed:
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+```
+
+> 이 기능을 활성화하면 전체 문서 사이트의 모든 콘텐츠 탭이 연결되고 사용자가 탭을 클릭하면 동일한 레이블로 전환됩니다.
+
 ```yaml
 theme:
   features:

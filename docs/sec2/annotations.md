@@ -4,6 +4,8 @@
 
 ## 설정 (mkdocs.yml)
 
+> 기본설정
+
 ```yaml
 markdown_extensions:
   - attr_list
@@ -11,7 +13,7 @@ markdown_extensions:
   - pymdownx.superfences
 ```
 
-### 아이콘 변경 (mkdocs.yml)
+> 아이콘 변경
 
 ```yaml
 theme:

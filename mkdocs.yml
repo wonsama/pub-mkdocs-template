@@ -58,7 +58,7 @@ theme:
   name: material
   font:
     # https://fonts.google.com/ 폰트명 설정
-    text: Noto Sans Korean
+    text: Nanum Gothic
   logo: assets/images/logo.jpg
   favicon: assets/images/logo.jpg
   # 목차 등과 같은 정보가 언어에 맞춰 표시됨

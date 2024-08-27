@@ -4,6 +4,8 @@
 
 ## 설정 (mkdocs.yml)
 
+> 기본설정
+
 ```yaml
 markdown_extensions:
   - admonition

@@ -90,14 +90,13 @@ theme:
 theme:
   features:
     - content.code.annotate # (1)
+    - text 2 # (2)
 ```
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, **formatted
     text**, images, ... basically anything that can be written in Markdown.
 
-```yaml
-# (1)!
-```
+2.  :heart: L.O.V.E
 
 ### 특정라인 강조
 
@@ -110,7 +109,8 @@ def bubble_sort(items):
         for j in range(len(items) - 1 - i):
             if items[j] > items[j + 1]:
                 items[j], items[j + 1] = items[j + 1], items[j]
-```
+````
+
 ````
 
 ```py hl_lines="2 3"
@@ -124,3 +124,4 @@ def bubble_sort(items):
 ## 참조
 
 - [사용자화 : 색상 변경 등](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#customization){:target="\_blank"}
+````
